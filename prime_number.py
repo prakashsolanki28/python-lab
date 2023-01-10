@@ -1,21 +1,10 @@
-a=2
-num=13
-if num%a==0 & a!=num:
-    print('not prime')
-else: # loop not exited via break
-  print('prime')
+a = 120
+count = 0
+for i in range(2,(a//2)):
+    if(a % i == 0):
+        count = 1
 
-
-for a in range(a, num):
-    if a % num == 0:
-        print('not prime')
-        break
-else: # loop not exited via break
-    print('prime')
-
-
-def is_prime(n):
-    for i in range(3, n):
-        if n % i == 0:
-            return False
-    return True
+if count == 0:
+    print("prime")
+else:
+    print("not prime")  

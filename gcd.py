@@ -1,10 +1,5 @@
-#Source Code: Using Loops
-# Python program to find H.C.F of two numbers
-
-# define a function
 def compute_hcf(x, y):
-
-# choose the smaller number
+# find the smaller number
     if x > y:
         smaller = y
     else:
@@ -19,9 +14,6 @@ num2 = 24
 
 print("The H.C.F. is", compute_hcf(num1, num2))
 
-
-#Source Code: Using the Euclidean Algorithm
-# Function to find HCF the Using Euclidian algorithm
 def compute_hcf(x, y):
    while(y):
        x, y = y, x % y
